@@ -1,7 +1,8 @@
-﻿/*Descripción: Solicita al usuario un número y eleva este número al cuadrado
-solo si es positivo. */
-Console.WriteLine("Digita un numero: ");
-double num = double.Parse(Console.ReadLine());
-if (num > 0) Console.WriteLine($"El cuadrado del numero es: {num * num}");
-else if (num < 0) Console.WriteLine("El numero es negativo");
-else Console.WriteLine("El numero es cero");
+﻿/*Solicita al usuario dos números. Si el primero es mayor, devuelva
+su doble, de lo contrario devuelva el triple del segundo.  */
+Console.WriteLine("Digita el primer numero: ");
+double num1 = double.Parse(Console.ReadLine());
+Console.WriteLine("Digita el segundo numero: ");
+double num2 = double.Parse(Console.ReadLine());
+if (num1 > num2) Console.WriteLine($"El doble del primer numero es: {num1 * 2}");
+else Console.WriteLine($"El triple del segundo numero es: {num2*3}");
