@@ -1,6 +1,4 @@
-﻿/*Pide al usuario un número. Si es positivo, devuelve su raíz
-cuadrada, de lo contrario, devuelve su cuadrado.   */
-Console.WriteLine("Digita un numero: ");
-double num = double.Parse(Console.ReadLine());
-if (num > 0) Console.WriteLine($"La raiz cuadrada del numero es: {Math.Sqrt(num)}");
-else Console.WriteLine($"El cuadrado del numero es: {num*num}");
+﻿/*Pide al usuario el radio de un círculo y calcula su perímetro. */
+Console.WriteLine("Digita el radio del circulo: ");
+double radio = double.Parse(Console.ReadLine());
+Console.WriteLine($"El perimetro del circulo es: {2*Math.PI*radio}");
