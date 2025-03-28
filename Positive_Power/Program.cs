@@ -1,17 +1,13 @@
-﻿/* Solicita dos números y muestra el residuo de la división del
-primero entre el segundo.  */
+﻿/* Calcula y muestra la suma de los números pares entre 1 y 50  */
 
-Console.WriteLine("Digita el primer numero: ");
-int num1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Digita el segundo numero, debe ser diferente de cero: ");
-int num2 = int.Parse(Console.ReadLine());
-
-while (num2 == 0){
-Console.WriteLine("El segundo numero no puede ser cero, digita otro nuevamente: ");
-num2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Suma de los numeros del 1 al 50");
+int cuenta = 1;
+for (int i = 2; i <= 50; i++)
+{
+     cuenta = cuenta + i ;
 }
 
-Console.WriteLine($"El residuo entre el numero {num1} y el numero {num2} es: {num1 % num2}");
+Console.WriteLine($"La suma de los numeros del 1 al 50 es: {cuenta}");
 
 
 
