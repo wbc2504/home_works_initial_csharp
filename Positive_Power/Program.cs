@@ -1,13 +1,17 @@
-﻿/* Calcula y muestra la suma de los números pares entre 1 y 50  */
+﻿/*  Descripción: Pide una palabra al usuario y muestra la longitud de esa palabra.   */
 
-Console.WriteLine("Suma de los numeros del 1 al 50");
-int cuenta = 1;
-for (int i = 2; i <= 50; i++)
+Console.WriteLine("Digita una palabra: ");
+String palabra = Console.ReadLine();
+
+int cantLetras = 0;
+foreach (char p in palabra)
 {
-     cuenta = cuenta + i ;
+  cantLetras ++;
 }
 
-Console.WriteLine($"La suma de los numeros del 1 al 50 es: {cuenta}");
+Console.WriteLine($"La cantidad de letras de la palabra {palabra} es: {cantLetras}");
+
+
 
 
 
