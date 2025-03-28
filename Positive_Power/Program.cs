@@ -1,32 +1,10 @@
-﻿/* Solicita al usuario un número entre 1 y 7 y muestra el día de la
-semana correspondiente, pero solo considerando los días laborables. */
+﻿/* Solicita al usuario su salario anual y, si este excede los 12000,
+muestra el impuesto a pagar que es el 15% del excedente.  */
 
-
-Boolean validar = true;
-int num = 0;
-
-while (validar == true){
-Console.WriteLine("Digita un numero entre 1 y 7: ");
-num = int.Parse(Console.ReadLine());
-if (num > 7 || num < 1) 
-{
-    Console.WriteLine("El numero no esta dentro del rango solicitado");
-}
-else 
-{
-    validar =false;
-}
-}
-
-string dia = num switch
-            {
-                1 => "Lunes",
-                2 => "Martes",
-                3 => "Miércoles",
-                4 => "Jueves",
-                5 => "Viernes",
-                _ => "Número inválido. Solo se consideran días laborables (1-5)."
-            };
-Console.WriteLine(dia);
+Console.WriteLine("Digita tu salario anual");
+double salario = double.Parse(Console.ReadLine());
+const double tope = 12000;
+if (salario > 12000) Console.WriteLine($"El impuesto a pagar es: {(salario - tope)*0.15}");
+else Console.WriteLine("No aplica para pagar impuestos");
 
 
