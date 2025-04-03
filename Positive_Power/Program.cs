@@ -3,13 +3,13 @@
 Console.WriteLine("Digita una palabra: ");
 String palabra = Console.ReadLine();
 
-int cantLetras = 0;
+int cantidadLetras = 0;
 foreach (char p in palabra)
 {
-  cantLetras ++;
+  cantidadLetras ++;
 }
 
-Console.WriteLine($"La cantidad de letras de la palabra {palabra} es: {cantLetras}");
+Console.WriteLine($"La cantidad de letras de la palabra {palabra} es: {cantidadLetras}");
 
 
 
