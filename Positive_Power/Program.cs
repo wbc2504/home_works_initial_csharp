@@ -1,15 +1,17 @@
-﻿/*  Descripción: Pide una palabra al usuario y muestra la longitud de esa palabra.   */
+﻿/*  Pide al usuario cuatro números y muestra el promedio.   */
 
-Console.WriteLine("Digita una palabra: ");
-String palabra = Console.ReadLine();
+Console.WriteLine("Digita el primer numero: ");
+int num1 = int.Parse(Console.ReadLine());
+Console.WriteLine("Digita el primer numero: ");
+int num2 = int.Parse(Console.ReadLine());
+Console.WriteLine("Digita el primer numero: ");
+int num3 = int.Parse(Console.ReadLine());
+Console.WriteLine("Digita el primer numero: ");
+int num4 = int.Parse(Console.ReadLine());
 
-int cantidadLetras = 0;
-foreach (char p in palabra)
-{
-  cantidadLetras ++;
-}
 
-Console.WriteLine($"La cantidad de letras de la palabra {palabra} es: {cantidadLetras}");
+Console.WriteLine($"El promedio de los 4 numeros digitados es: {(num1+num2+num3+num4)/4}");
+
 
 
 
