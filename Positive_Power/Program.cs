@@ -1,21 +1,39 @@
-﻿/*  Pide al usuario cuatro números y muestra el promedio.   */
+﻿/* Pide al usuario cinco números y muestra el más pequeño. */
 
 Console.WriteLine("Digita el primer numero: ");
-double num1 = double.Parse(Console.ReadLine());
+int num1 = int.Parse(Console.ReadLine());
 Console.WriteLine("Digita el primer numero: ");
-double num2 = double.Parse(Console.ReadLine());
+int num2 = int.Parse(Console.ReadLine());
 Console.WriteLine("Digita el primer numero: ");
-double num3 = double.Parse(Console.ReadLine());
+int num3 = int.Parse(Console.ReadLine());
 Console.WriteLine("Digita el primer numero: ");
-double num4 = double.Parse(Console.ReadLine());
+int num4 = int.Parse(Console.ReadLine());
+Console.WriteLine("Digita el primer numero: ");
+int num5 = int.Parse(Console.ReadLine());
 
+int menor = 0;
+if (num1>num2) 
+{
+  menor = num2;
+}
+else if (num2>num3)
+{
+  menor = num3;
+}
+else if (num3>num4)
+{
+  menor = num4;
+}
+else if (num4>num5)
+{
+  menor = num5;
+}
+else
+{
+menor = num1;
+}
 
-Console.WriteLine($"El promedio de los 4 numeros digitados es: {(num1+num2+num3+num4)/4}");
-
-
-
-
-
+Console.WriteLine($"El numero menor de los 5 digitados es: {menor}");
 
 
 
