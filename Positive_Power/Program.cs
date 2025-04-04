@@ -1,40 +1,19 @@
-﻿/* Pide al usuario cinco números y muestra el más pequeño. */
+﻿/* Pide una palabra al usuario y devuelve el número de vocales en
+esa palabra. */
 
-Console.WriteLine("Digita el primer numero: ");
-int num1 = int.Parse(Console.ReadLine());
-Console.WriteLine("Digita el primer numero: ");
-int num2 = int.Parse(Console.ReadLine());
-Console.WriteLine("Digita el primer numero: ");
-int num3 = int.Parse(Console.ReadLine());
-Console.WriteLine("Digita el primer numero: ");
-int num4 = int.Parse(Console.ReadLine());
-Console.WriteLine("Digita el primer numero: ");
-int num5 = int.Parse(Console.ReadLine());
+Console.WriteLine("Digita una palabra: ");
+String palabra = (Console.ReadLine());
 
-int menor = 0;
-if (num1>num2) 
+int contador=0;
+for (int i = 0; i < palabra.Length; i++)
 {
-  menor = num2;
-}
-else if (num2>num3)
-{
-  menor = num3;
-}
-else if (num3>num4)
-{
-  menor = num4;
-}
-else if (num4>num5)
-{
-  menor = num5;
-}
-else
-{
-menor = num1;
+    if (palabra[i]=='a' || palabra[i]=='e' || palabra[i]== 'i' || palabra[i]=='o' || palabra[i]=='u')
+    {
+          contador ++;
+    }
 }
 
-Console.WriteLine($"El numero menor de los 5 digitados es: {menor}");
-
+Console.WriteLine($"La cantidad de vocales de la palabra {palabra} es: {contador}");
 
 
 
