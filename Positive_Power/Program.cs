@@ -1,22 +1,12 @@
-﻿/* Pide una palabra al usuario y devuelve el número de vocales en
-esa palabra. */
+﻿/*  Pide un número al usuario y devuelve el factorial de ese número. 
+ */
 
-Console.WriteLine("Digita una palabra: ");
-String palabra = (Console.ReadLine());
-
-int contador=0;
-for (int i = 0; i < palabra.Length; i++)
+Console.WriteLine("Digita un numero entero: ");
+int numero = int.Parse(Console.ReadLine() );
+int factorial = numero;
+for (int i = (numero -1); i > 0 ; i--)
 {
-    if (palabra[i]=='a' || palabra[i]=='e' || palabra[i]== 'i' || palabra[i]=='o' || palabra[i]=='u')
-    {
-          contador ++;
-    }
+   factorial = factorial*i;
 }
 
-Console.WriteLine($"La cantidad de vocales de la palabra {palabra} es: {contador}");
-
-
-
-
-
-
+Console.WriteLine($"El factorial del numero {numero} es: {factorial}");
